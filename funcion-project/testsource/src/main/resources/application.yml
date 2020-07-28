@@ -1,0 +1,26 @@
+druid:
+  type: com.alibaba.druid.pool.DruidDataSource
+  master:
+    url: jdbc:mysql://192.168.157.128:3306/testDB?useUnicode=yes&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true&useSSL=false
+    username: root
+    password: anbswdc123
+  slave:
+    url: jdbc:mysql://192.168.157.129:3306/testDB?useUnicode=yes&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true&useSSL=false
+    username: root
+    password: anbswdc123
+  defaultName: mastersource
+spring:
+  application:
+    #当前服务名称
+    name: test
+
+server:
+  #端口
+  port: 9803
+
+mybatis:
+  #对应实体类路径
+  type-aliases-package: com.pro..eneity
+  #对应mapper映射文件路径
+  mapper-locations: classpath:mapper/*.xml
+
