@@ -1,3 +1,4 @@
+#多数据源，读写分离
 druid:
   type: com.alibaba.druid.pool.DruidDataSource
   master:
